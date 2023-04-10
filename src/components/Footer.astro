@@ -1,0 +1,33 @@
+---
+import { Icon } from 'astro-icon'
+
+const today = new Date();
+---
+
+<footer>
+	<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+		<Icon name="mdi:creative-commons" />
+	</a>
+	<a href="https://github.com/podfinkx">
+		<Icon name="mdi:github" />
+	</a>
+	<a href="mailto:podfinkx@pm.me">
+		<Icon name="mdi:envelope" />
+	</a>
+	<!-- &copy; {today.getFullYear()} Manuel Hurtado. All rights reserved. -->
+</footer>
+<style>
+	a {
+		font-size: 0;
+		margin-right: 4px;
+	}
+    [astro-icon] {
+        /* OR */
+		width: 2rem;
+    }
+	footer {
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+</style>

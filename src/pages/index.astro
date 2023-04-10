@@ -1,0 +1,29 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1 class="text-red-500">👋 Hello, Friend</h1>
+			<p>
+				I'm Manuel, you can find me online as <a href="/about">@podfinkx</a>. I live in Caracas, Venezuela and work as a Freelance Web Developer
+			</p>
+			<p>
+				I’m generally interested in programming, security, videogames, music, movies, sitcoms, fitness, philosophy and psychology
+			</p>
+			<p>
+				In this website you can find some of my thoughs about <a href="/blog">various topics</a>, my <a href="/projects">projects</a> showcase and info <a href="/about">about me</a> if you feel like stalking
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
