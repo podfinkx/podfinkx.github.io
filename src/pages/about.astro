@@ -2,7 +2,9 @@
 import Layout from '../layouts/BlogPost.astro';
 import BaseHead from '../components/BaseHead.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import { Content as About } from '../content/about.md'
+
+// import about markdown
+import * as About from '../content/about/about.md'
 ---
 
 <!DOCTYPE html>
@@ -17,6 +19,6 @@ import { Content as About } from '../content/about.md'
 		updatedDate={new Date('April 14 2023')}
 		heroImage="/Pulp-Manga-1.png"
 	>
-	 <About />
+	 <About.Content />
 	</Layout>
 </html>
