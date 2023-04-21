@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { Icon } from 'astro-icon';
 ---
 
 <!DOCTYPE html>
@@ -13,7 +14,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
-			<h1 class="text-red-500">👋 Hello, Friend</h1>
+			<h1 class="greeting">
+				<Icon class="icon-greeting" name="noto:waving-hand"/> 
+				Hello, Friend
+			</h1>
 			<p>
 				I'm Manuel, you can find me online as <a href="/about">@podfinkx</a>. I live in Caracas, Venezuela and work as a Freelance Web Developer
 			</p>
@@ -21,9 +25,39 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				I’m generally interested in programming, security, videogames, music, movies, sitcoms, fitness, philosophy and psychology
 			</p>
 			<p>
-				In this website you can find some of my thoughs about <a href="/blog">various topics</a>, my <a href="/projects">projects</a> showcase and info <a href="/about">about me</a> if you feel like stalking
+				In this website you can find some of my thoughs about <a href="/blog">various topics</a>, my <a href="/projects">projects</a> showcase and some info <a href="/about">about me</a> in case you want to know me better.
 			</p>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style lang="css">
+	.greeting {
+		display: flex;
+		align-items: center;
+	}
+	.icon-greeting {
+		font-size: 0em !important;
+		width: 3.5rem !important;
+		margin-right: .5rem;
+	}
+</style>
+
+<script>
+	console.log(`
+  _   _ _____ _     _     ___  
+ | | | | ____| |   | |   / _ \\ 
+ | |_| |  _| | |   | |  | | | |
+ |  _  | |___| |___| |__| |_| |
+ |_| |_|_____|_____|_____\\___/ 
+  _____ ____  ___ _____ _   _ ____  
+ |  ___|  _ \\|_ _| ____| \\ | |  _ \\ 
+ | |_  | |_) || ||  _| |  \\| | | | |
+ |  _| |  _ \< | || |___| |\\  | |_| |
+ |_|   |_| \\_\\___|_____|_| \\_|____/ 
+
+ https://www.youtube.com/watch?v=pCKDrDvaOKE
+	
+	`)
+</script>
