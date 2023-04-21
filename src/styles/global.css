@@ -4,13 +4,21 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
  :root {
-	--primary: #05d9e8;
-	--primary-alt: #005678;
+	--primary: #3bedf7;
+	--primary-alt: #08B1BA;
 	--secondary: #ff2a6d;
 	--foreground: #d1f7ff;
-	--background: #01012b;
+	--background: #121212;
+	--header: #262626;
+	--header-link: #3B3B3B;
+
+    --swiper-navigation-color: var(--header) !important;
+    --swiper-theme-color: var(--header) !important;
  }
 body {
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
 	font-family: Verdana, sans-serif;
 	margin: auto;
 	padding: 20px;
@@ -38,7 +46,7 @@ a {
 }
 a:hover {
 	text-decoration: underline;
-	color: var(--secondary);
+	color: var(--primary-alt);
 }
 textarea {
 	width: 100%;
@@ -59,9 +67,10 @@ img {
 }
 code {
 	padding: 2px 5px;
-	background-color: #f2f2f2;
+	background-color: var(--header);
 }
 pre {
+	background-color: var(--header) !important;
 	padding: 1rem;
 }
 pre > code {
@@ -69,8 +78,12 @@ pre > code {
 }
 blockquote {
 	border: 1px solid #999;
-	color: #222;
+	color: var(--foreground);
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;
+}
+
+mark {
+	background-color: var(--primary);
 }
