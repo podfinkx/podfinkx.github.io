@@ -2,13 +2,27 @@
 import '../styles/global.css';
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+import { Icon } from 'astro-icon';
 ---
 
 <header>
 	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
+		<HeaderLink href="/">
+			<Icon class="icon" name="noto:house-with-garden" />
+			Home
+		</HeaderLink>
+		<HeaderLink href="/work">
+			<Icon class="icon"  name="noto:briefcase" />
+			Work
+		</HeaderLink>
+		<!-- <HeaderLink href="/blog">
+			<Icon class="icon" name="noto:seedling" />
+			Blog
+		</HeaderLink> -->
+		<HeaderLink href="/about">
+			<Icon class="icon" name="noto:man-astronaut-light-skin-tone" />
+			About
+		</HeaderLink>
 	</nav>
 </header>
 <style>
@@ -20,11 +34,17 @@ import { SITE_TITLE } from '../consts';
 	nav {
 		display: flex;
 		align-items: center;
-		background-color: #03037B;
+		background-color: var(--header);
 		padding: 0 20px 0 20px;
 		border-radius: 999px;
 	}
 	h2 {
 		margin: 0.5em 0;
+	}
+	.icon {
+		/* OR */
+		font-size: 0em !important;
+		width: 1.5rem !important;
+		margin-right: .2rem;
 	}
 </style>
