@@ -16,21 +16,20 @@ const isActive = href === completePath;
 <a href={href} class:list={[className, { active: isActive }]} {...props}>
 	<slot />
 </a>
-<style>
+<style  lang="css">
 	a {
 		font-size: 1em !important;
-		display: inline-block;
+		display: flex;
 		color: var(--foreground);
 		padding: 8px;
 		text-decoration: none !important;
 		margin-right: 0;
 	}
 	a:hover {
-		background-color: #0505CA;
+		background-color: var(--header-link);
 		color: var(--foreground);
 	}
 	a.active {
 		color: var(--primary);
-		font-weight: bolder;
 	}
 </style>
