@@ -19,7 +19,6 @@ These are a few things that interest me, If you like to know more about me:
 
 Some of my links:
 
-- Instagram [@podfinkx](https://www.instagram.com/podfinkx)
 - GitHub [@podfinkx](https://github.com/podfinkx)
 - Gitlab [@podfinkx](https://gitlab.com/podfinkx)
 
