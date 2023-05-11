@@ -27,7 +27,7 @@ Some of my links:
 
 ## contact
 
-Send email to podfinkx@pm.me or send me a DM on [Instagram](https://www.instagram.com/podfinkx).
+Send email to podfinkx@pm.me
 
 My PGP [Key](/pub.gpg)
 
